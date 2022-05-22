@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de piso</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <P>Contar quantas peças de piso deve-se comprar pode parecer complicado, leia com atenção as indicações abaixo para
+        receber o cálculo correto!</P>
+    <h1>Calculadora de piso</h1>
+    <h2>Conforme a imagem ao lado, use uma trena para calcular o tamanho do ambiente. <img src="/img/piso.png"
+            id="medicao" srcset=""></h2>
+    <h3>Medidas do piso</h3>
+    <label for="largura">Informe a primeira medida(ex:3.45):
+        <input type="text" name="largura" id="largura">
+    </label><BR>
+    <label for="comprimento">Informe a segunda medida(ex: 2.80):
+        <input type="text" name="comprimento" id="comprimento">
+    </label>
+    <h3>Medidas da peça cerâmica</h3>
+
+    <label for="peca1">Informe a primeira medida da peça(ex:0.45):
+        <input type="text" name="peca1" id="peca1">
+    </label><BR>
+    <label for="peca2">Informe a segunda medida da peça(ex:0.40):
+        <input type="text" name="peca2" id="peca2">
+    </label><BR>
+    <button type="submit" onclick="entrada()">Calcular</button>
+    <h1 id="resultadoPecas"></h1>
+    <h2 id="resultadoMetro"></h2>
+    <p id="mostrar">Esse calculo de peças inclui 10% a mais, recomendado para perdas e substiuições posteriores das
+        peças!<BR>O valor informado de metro quadrado, corresponde exatamente a área de piso informada!</p>
+
+    <footer>
+        Desenvolvido por <a href="https://www.linkedin.com/in/evelinlopes/">Eve Lopes 👩‍💻</a> - <a
+            href="https://github.com/evelopes/calculo_piso">Calculo de piso</a>
+    </footer>
+
+    <script src="calculo.js"></script>
+
+</body>
+
+</html>
